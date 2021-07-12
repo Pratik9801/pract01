@@ -10,6 +10,5 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="pract01Flow" doc:id="3411b6a3-472f-41e5-84aa-77d9d6dcac14" >
 		<http:listener doc:name="Listener" doc:id="5883fb26-9e9e-4b65-b17a-49edcb372dc4" config-ref="HTTP_Listener_config" path="/pract01"/>
 		<set-payload value='#["hello Git!!"]' doc:name="Set Payload" doc:id="86499475-76c9-4c9d-b310-25b6887be87e" />
-		<logger level="INFO" doc:name="Logger" doc:id="bad9c575-7497-4f5e-b2c7-4f1885258ff9" message="#[payload]"/>
 	</flow>
 </mule>
